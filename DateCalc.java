@@ -4,7 +4,7 @@ public class DateCalc
   {
     int y=2018;
     
-    while (d > 365)
+    while (d >= 365)
     {
       if (y%400==0 || (y%4==0 && y%100 !=0))
       {
