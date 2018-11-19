@@ -8,8 +8,10 @@ public class DateCalc
     {
       if (y%400==0 || (y%4==0 && y%100 !=0))
       {
-        d-=366;
-        y++;
+        if (y > 366){
+          d-=366;
+          y++;
+        }
       }
       else
       {
